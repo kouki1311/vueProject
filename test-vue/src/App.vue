@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <img src="./assets/usa.png">
-    <router-view/>
+   <main>
+    <router-view></router-view>
+  </main>
   </div>
 </template>
 
@@ -13,7 +15,7 @@ export default {
 
 <style>
 #app {
-  @import "./assets/css/main.css";
+  /* @import "./assets/css/main.css"; */
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
