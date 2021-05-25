@@ -5,13 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style> 
+.alert{
+    background-color: #fcc;
+    padding: 10px;
+    border: 1px solid #f33;
+}
+    </style>
 </head>
 <body>
-
-    <div id="app">
-        <div v-bind:style="{ color: textColor }">Text is Red.</div>
-        <div v-bind:class="{ active: isActive }">Text is Active.</div>
+    <div id="app-3">
+        <span v-show="seen">
+            見えるかな？
+        </span>
     </div>
+<!-- <div id="app-4">
+
+    <ol>
+        <li v-for="todo in todos">
+{{todo.text}}
+        </li>
+    </ol>
+</div> -->
+<div id="app-5">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">メッセージをひっくり返すよ</button>
+</div>
+<!-- <div id="app-6">
+<p>{{message1}}</p>
+<input v-model="message1">
+</div> -->
+<div id="app-7">
+    <alert-box>IDが未入力です</alert-box>
+    <button  type="button"@click="onClick">送信</button>
+</div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
