@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 
 import index  from '@/components/index'
+
 Vue.use(Router)
 
 export default new Router({
